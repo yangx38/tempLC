@@ -1,5 +1,4 @@
 // T = O(2^n*n) 答案总数*构造每个答案需要时间
-    // each interval, cur or not cur; check if it is palindrome is O(n).
 // S = O(n)
 class Solution {
     List<List<String>> res = new ArrayList<>();

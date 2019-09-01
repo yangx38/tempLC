@@ -2,7 +2,6 @@
 // S = O(n^2)
 class Solution {
     public int fourSumCount(int[] A, int[] B, int[] C, int[] D) {
-        if(A == null || A.length == 0) return 0;
         Map<Integer, Integer> map = new HashMap<>();
         int res = 0;
         for(int a : A) {

@@ -1,3 +1,5 @@
+// T = O(logn)
+// S = O(1)
 public class Solution extends GuessGame {
     public int guessNumber(int n) {
         int L = 1, R = n;

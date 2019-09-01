@@ -15,17 +15,14 @@ class Solution {
 }
 
 // T = O(n)
-// S = O(n)
+// S = O(1)
 class Solution {
     public int maxSubArray(int[] nums) {
         if(nums == null || nums.length == 0) return 0;
-        int[] dp = new int[nums.length]; 
-        dp[0] = nums[0];
-        int res = nums[0];
+        int max = nums[0], res = nums[0];
         for(int i = 1; i < nums.length; i++) {
-            if(dp[i-1] > 0) dp[i] = dp[i-1]+nums[i];
-            else dp[i] = nums[i];
-            res = Math.max(res, dp[i]);
+            max = Math.max(nums[i], max+nums[i]);
+            res = Math.max(res, max);
         }
         return res;
     }

@@ -29,8 +29,7 @@ class Solution {
     }
     
     private int partition(int[] A, int L, int R) {
-        int mid = L+(R-L)/2;
-        int pivot = A[mid];
+        int mid = L+(R-L)/2, pivot = A[mid];
         swap(A, mid, L);
         int i = L+1, j = R;
         while(i <= j) {

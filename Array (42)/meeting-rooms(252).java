@@ -1,3 +1,5 @@
+// T = O(nlogn)
+// S = O(n)
 class Solution {
     public boolean canAttendMeetings(int[][] intervals) {
         if(intervals == null || intervals.length <= 1) return true;

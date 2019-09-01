@@ -13,8 +13,7 @@ class Solution {
     private void helper(char[] sc, int[] visited) {
         res++;
         for(int i = 0; i < sc.length; i++) {
-            if(visited[i] == 1) continue;
-            if(i > 0 && sc[i] == sc[i-1] && visited[i-1] == 0) continue;
+            if(visited[i] == 1 || i > 0 && sc[i] == sc[i-1] && visited[i-1] == 0) continue;
             visited[i] = 1;
             helper(sc, visited);
             visited[i] = 0;
